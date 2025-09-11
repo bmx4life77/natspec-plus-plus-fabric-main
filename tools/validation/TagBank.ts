@@ -1,0 +1,36 @@
+export interface TagDefinition {
+  type: "boolean" | "number" | "string";
+  description: string;
+  required?: boolean;
+  validate?: (value: any) => boolean;
+}
+
+export const TagBank: Record<string, TagDefinition> = {
+  parallel: {
+    type: "boolean",
+    description: "Indicates method supports parallel execution",
+    required: true,
+  },
+  threadSafe: {
+    type: "boolean",
+    description: "Ensures method can be executed concurrently without race conditions",
+    required: true,
+  },
+  maxConcurrency: {
+    type: "number",
+    description: "Maximum number of concurrent executions allowed",
+    validate: (value) => typeof value === "number" && value > 0,
+  },
+  gasOptimized: {
+    type: "boolean",
+    description: "Indicates method has been optimized for gas efficiency",
+  },
+  auditCritical: {
+    type: "boolean",
+    description: "Marks method as critical for audit and security review",
+  },
+  reentrancyGuard: {
+    type: "boolean",
+    description: "Indicates method is protected against reentrancy attacks",
+  },
+};

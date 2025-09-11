@@ -1,0 +1,55 @@
+{
+  "name": "natspec-plus-plusv2",
+  "version": "1.0.0",
+  "description": "NatSpec++ ProtocolScript Runtime System with tag-aware execution, benchmarking, and IDE integration",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "vite",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "benchmark": "npx hardhat natspec:benchmark --contract ParallelExecutionFabric --method executeParallel",
+    "natspec:validate": "npx hardhat natspec:validate-profile",
+    "clean": "rimraf artifacts cache dist && npx hardhat clean",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "prepare": "tsc"
+  },
+  "keywords": [
+    "natspec",
+    "solidity",
+    "smart-contracts",
+    "hardhat",
+    "metadata",
+    "parallel-execution",
+    "benchmarking",
+    "fabric",
+    "typescript",
+    "ethereum"
+  ],
+  "author": "Louis Pearson",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@typechain/ethers-v5": "^11.1.2",
+    "@typechain/hardhat": "^7.0.0",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.34.0",
+    "hardhat": "^2.26.3",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vsce": "^2.15.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "ethers": "^5.7.2",
+    "save": "^2.9.0"
+  }
+}

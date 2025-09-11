@@ -1,0 +1,6 @@
+{
+  "contract": "ParallelExecutionFabric",
+  "method": "executeParallel",
+  "gasUsed": "56388",
+  "timestamp": 1757339559324
+}

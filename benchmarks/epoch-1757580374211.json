@@ -1,0 +1,7 @@
+{
+  "epoch": "epoch-1757580374211",
+  "contract": "ParallelExecutionFabric",
+  "method": "executeParallel",
+  "gasUsed": "56388",
+  "timestamp": 1757580374211
+}
