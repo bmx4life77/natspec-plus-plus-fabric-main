@@ -1,5 +1,5 @@
 {
-  "name": "natspec-plus-plusv2",
+  "name": "natspec-plus-fabric",
   "version": "1.0.0",
   "description": "NatSpec++ ProtocolScript Runtime System with tag-aware execution, benchmarking, and IDE integration",
   "main": "index.js",
